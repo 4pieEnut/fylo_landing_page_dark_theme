@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.375rem 1.125rem;
+
+  @include breakpoint-up (large){
+    margin: 3.75rem 3.75rem;
+  }
+
+  img {
+    width: 4.5rem;
+    height: 1.5rem;
+
+    @include breakpoint-up (large){
+      width: 11.25rem;
+      height: 3.125rem;
+    }
+  }
+
+  &_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.625rem;
+
+    @include breakpoint-up (large){
+      gap: 4.625rem;
+    }
+
+    a {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.625rem;
+      text-decoration: none;
+      color: $white;
+      cursor: pointer;
+
+      &:hover {
+        color: $cyanInsideCtaGrad;
+        transition: color 0.3s ease-in-out;
+        font-weight: 700;
+      }
+
+      @include breakpoint-up (large){
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
