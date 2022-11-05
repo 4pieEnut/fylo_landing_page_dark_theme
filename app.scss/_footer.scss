@@ -4,80 +4,140 @@
   align-items: center;
   justify-content: center;
   background: $darkBlueFooterbg;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 12rem;
+  padding-bottom: 2rem;
+
+  @include breakpoint-up (large){
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    gap: 50px;
+  }
 
   &_content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    padding-top: 12rem;
-    padding-bottom: 2rem;
   
     img {
       width: 125px;
       height: 40px;
       margin-top: 2rem;
-    }
-  
-    &_location {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 30px;
-      margin-top: 1rem;
-  
-      img {
-        width: 30px;
-        height: 15px;
-        margin-top: 1rem;
-      }
-  
-      p {
-        font-size: 0.75rem;
-        text-align: left;
+
+      @include breakpoint-up (large){
+        width: 180px;
+        height: 60px;
       }
     }
-  
-    &_contact {
+
+    &_details {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 10px;
-  
-      a {
+
+      @include breakpoint-up (large){
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      &_location {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 30px;
-        font-size: 0.75rem;
-  
+        margin-top: 1rem;
+    
         img {
-          width: 15px;
-          height: 11px;
-          margin-top: 0;
+          width: 30px;
+          height: 15px;
+          margin-top: 1rem;
+
+          @include breakpoint-up (large){
+            width: 40px;
+            height: 20px;
+          }
+        }
+    
+        p {
+          font-size: 0.75rem;
+          text-align: left;
+
+          @include breakpoint-up (large){
+            font-size: 1rem;
+          }
         }
       }
-    }
-  
-    &_link {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-top: 3rem;
-  
-      a {
-        font-size: 0.75rem;
-        line-height: 30px;
-  
-        &:hover {
-          font-weight: 700;
-        } 
+    
+      &_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+
+        @include breakpoint-up (large){
+          margin-top: 2rem;
+          gap: 20px;
+        }
+    
+        a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          gap: 30px;
+          font-size: 0.75rem;
+
+          @include breakpoint-up (large){
+            font-size: 1rem;
+          }
+    
+          img {
+            width: 15px;
+            height: 11px;
+            margin-top: 0;
+
+            @include breakpoint-up (large){
+              width: 27px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    
+      &_link {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: auto;
+        margin-top: 3rem;
+
+        @include breakpoint-up (large){
+          margin-top: 1.8rem;
+          width: 215px;
+          gap: 20px;
+        }
+    
+        a {
+          font-size: 0.75rem;
+          line-height: 30px;
+
+          @include breakpoint-up (large){
+            font-size: 1rem;
+          }
+    
+          &:hover {
+            font-weight: 700;
+          } 
+        }
       }
     }
   }
@@ -90,6 +150,11 @@
     gap: 15px;
     margin-bottom: 1rem;
 
+    @include breakpoint-up (large){
+      margin-top: 8rem;
+      margin-bottom: 0;
+    }
+
     &_circle {
       display: flex;
       align-items: center;
@@ -97,8 +162,13 @@
       height: 25px;
       width: 25px;
       border: 1px solid $white;
-      border-radius: 20px;
+      border-radius: 50px;
       background: transparent;
+
+      @include breakpoint-up (large){
+        height: 40px;
+        width: 40px;
+      }
 
       &:hover {
         border: 1px solid $cyanInsideCtaGrad;
@@ -106,6 +176,10 @@
 
       a {
         font-size: 10px;
+
+        @include breakpoint-up (large){
+          font-size: 20px;
+        }
 
         &:hover {
           color: $cyanInsideCtaGrad;
@@ -117,6 +191,10 @@
   &_attribution {
     font-size: 11px;
     text-align: center;
+
+    @include breakpoint-up (large){
+      display: none;
+    }
   
     a {
       color: hsl(228, 45%, 44%);
