@@ -1,0 +1,89 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: $darkBlueMainbg;
+  padding-top: 6rem;
+  padding-bottom: 16rem;
+
+  img {
+    width: 20px;
+    height: 16px;
+    margin-left: 40px;
+    margin-bottom: -20px;
+
+    @include breakpoint-up (large){
+      width: 40px;
+      height: 32px;
+      margin-bottom: -3.5rem;
+      margin-left: 10.3rem;
+    }
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 1.5rem;
+    padding: 1rem;
+
+    @include breakpoint-up (large){
+      flex-direction: row;
+      gap: 60px;
+      margin: 0 8rem;
+      padding: 3rem;
+    }
+
+    &_detail {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: $darkBlueTestbg;
+      box-shadow: 0 0 10px 0.1px $darkBlueTestbg;
+      border-radius: 5px;
+      padding: 0.3rem 1.5rem;
+
+      p {
+        font-size: 0.63rem;
+        letter-spacing: 0.4px;
+        line-height: 16px;
+      }
+
+      &_sub {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 20px;
+          margin-left: 0;
+          margin-bottom: 0;
+        }
+
+        &_text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+              
+          p:first-child {
+            font-size: 11px;
+            margin-bottom: -7px;
+            font-weight: 700;
+          }
+
+          p:last-child {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}

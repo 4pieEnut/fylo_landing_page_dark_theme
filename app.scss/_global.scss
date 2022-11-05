@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: $darkBlueIntroEmailbg;
+  font-size: $bodyFont;
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: $white;
+}
+
+button {
+  border-radius: 25px;
+  background: $buttonColor;
+  border: none;
+  color: $white;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to right, hsl(176, 73%, 78%), hsl(198, 64%, 69%));
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+
+

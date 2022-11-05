@@ -1,0 +1,63 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 1.125rem;
+
+  img {
+    width: 18.75rem;
+    height: 14.375rem;
+
+    @include breakpoint-up (large){
+      width: 31.75rem;
+      height: 25.375rem;
+    }
+  }
+
+  h1 {
+    font-size: 1.375rem;
+    text-align: center;
+    padding: 0 1rem;
+    letter-spacing: 0.05rem;
+
+    @include breakpoint-up (large){
+      font-size: 1.975rem;
+      padding: 0 21rem;
+      line-height: 3rem;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: -0.2rem;
+    margin-bottom: 1.6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    line-height: 1.25rem;
+
+    @include breakpoint-up (large){
+      margin-top: 1.25rem;
+      margin-bottom: 2.375rem;
+      padding-right: 17rem;
+      padding-left: 17rem;
+      font-size: 1.2rem;
+      line-height: 2.275rem;
+    }
+  }
+
+  a {
+
+    button {
+      width: 13.625rem;
+      height: 2.75rem;
+
+      @include breakpoint-up (large){
+        width: 17.5rem;
+        height: 3.5rem;
+        font-size: 1.4rem;
+        border-radius: 3.125rem;
+      }
+    }
+  }
+}
