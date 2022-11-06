@@ -8,6 +8,10 @@
     margin: 3.75rem 3.75rem;
   }
 
+  @include breakpoint-up (x-large){
+    margin: 5rem 5rem;
+  }
+
   img {
     width: 4.5rem;
     height: 1.5rem;
