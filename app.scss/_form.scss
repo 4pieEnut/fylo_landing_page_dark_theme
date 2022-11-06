@@ -34,6 +34,10 @@
     @include breakpoint-up (large){
       font-size: 1rem;
     }
+
+    @include breakpoint-up (x-large){
+      font-size: 1.1rem;
+    }
   }
 
   &_content {
@@ -47,6 +51,10 @@
       flex-direction: row;
       align-items: flex-start;
       gap: 2rem;
+    }
+
+    @include breakpoint-up (x-large){
+      margin-top: 1rem;
     }
 
     &_validation {
@@ -92,7 +100,7 @@
 
         @include breakpoint-up (large){
           font-size: 0.775rem !important;
-          margin-top: 10px !important;
+          margin-top: 0.625rem !important;
           text-align: left;
         }
       }
@@ -105,7 +113,7 @@
 
         @include breakpoint-up (large){
           font-size: 0.775rem !important;
-          margin-top: 10px !important;
+          margin-top: 0.625rem !important;
           text-align: left;
         }
       }
@@ -113,7 +121,7 @@
 
     button {
       border: none;
-      border-radius: 50px;
+      border-radius: 3.125rem;
       width: 14rem;
       height: 2.5rem;
       margin-bottom: 1rem;
