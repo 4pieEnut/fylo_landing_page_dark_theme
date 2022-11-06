@@ -15,7 +15,11 @@
     justify-content: space-between;
     padding-right: 4rem;
     padding-left: 4rem;
-    gap: 50px;
+    gap: 3.125rem;
+  }
+
+  @include breakpoint-up (x-large){
+    gap: 6rem;
   }
 
   &_content {
@@ -25,13 +29,13 @@
     justify-content: space-between;
   
     img {
-      width: 125px;
-      height: 40px;
+      width: 7.8125rem;
+      height: 2.5rem;
       margin-top: 2rem;
 
       @include breakpoint-up (large){
-        width: 180px;
-        height: 60px;
+        width: 11.25rem;
+        height: 3.75rem;
       }
     }
 
@@ -43,7 +47,11 @@
 
       @include breakpoint-up (large){
         flex-direction: row;
-        gap: 50px;
+        gap: 3.125rem;
+      }
+
+      @include breakpoint-up (x-large){
+        gap: 5rem;
       }
 
       &_location {
@@ -51,17 +59,17 @@
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 30px;
+        gap: 1.875rem;
         margin-top: 1rem;
     
         img {
-          width: 30px;
-          height: 15px;
+          width: 1.875rem;
+          height: 0.9375rem;
           margin-top: 1rem;
 
           @include breakpoint-up (large){
-            width: 40px;
-            height: 20px;
+            width: 2.5rem;
+            height: 1.25rem;
           }
         }
     
@@ -80,11 +88,11 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        gap: 10px;
+        gap: 0.625rem;
 
         @include breakpoint-up (large){
           margin-top: 2rem;
-          gap: 20px;
+          gap: 1.25rem;
         }
     
         a {
@@ -92,7 +100,7 @@
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-          gap: 30px;
+          gap: 1.875rem;
           font-size: 0.75rem;
 
           @include breakpoint-up (large){
@@ -100,13 +108,13 @@
           }
     
           img {
-            width: 15px;
-            height: 11px;
+            width: 0.9375rem;
+            height: 0.6875rem;
             margin-top: 0;
 
             @include breakpoint-up (large){
-              width: 27px;
-              height: 18px;
+              width: 1.3875rem;
+              height: 1.125rem;
             }
           }
         }
@@ -122,13 +130,13 @@
 
         @include breakpoint-up (large){
           margin-top: 1.8rem;
-          width: 215px;
-          gap: 20px;
+          width: 13.4375rem;
+          gap: 1.25rem;
         }
     
         a {
           font-size: 0.75rem;
-          line-height: 30px;
+          line-height: 1.875rem;
 
           @include breakpoint-up (large){
             font-size: 1rem;
@@ -159,15 +167,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 25px;
-      width: 25px;
+      height: 1.5625rem;
+      width: 1.5625rem;
       border: 1px solid $white;
       border-radius: 50px;
       background: transparent;
 
       @include breakpoint-up (large){
-        height: 40px;
-        width: 40px;
+        height: 2.5rem;
+        width: 2.5rem;
       }
 
       &:hover {
@@ -178,7 +186,7 @@
         font-size: 10px;
 
         @include breakpoint-up (large){
-          font-size: 20px;
+          font-size: 1.25rem;
         }
 
         &:hover {
@@ -189,7 +197,7 @@
   }
 
   &_attribution {
-    font-size: 11px;
+    font-size: 0.6875rem;
     text-align: center;
 
     @include breakpoint-up (large){
