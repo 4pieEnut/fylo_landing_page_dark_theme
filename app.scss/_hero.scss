@@ -3,7 +3,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: 0 1.125rem;
+  padding: 0 1.125rem;
+  background-image: url('../images/bg-curvy-mobile.svg');
+  background-position: 0rem 12rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include breakpoint-up (large){
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: 0rem 24rem;
+  }
+
+  @include breakpoint-up (x-large){
+    background-image: url('../images/bg-curvy-desktop.svg');
+    background-position: 0rem 22rem;
+  }
 
   img {
     width: 18.75rem;
@@ -19,7 +33,6 @@
     font-size: 1.375rem;
     text-align: center;
     padding: 0 1rem;
-    letter-spacing: 0.05rem;
 
     @include breakpoint-up (large){
       font-size: 1.975rem;
