@@ -186,17 +186,17 @@ button:hover {
   height: 67.1875rem;
   margin-top: -6rem;
   padding-top: 11rem;
-  padding-right: 0.125rem;
+  padding-right: 2.5rem;
   padding-bottom: 75rem;
-  padding-left: 0.125rem;
+  padding-left: 2.5rem;
 }
 @media (min-width: 64em) {
   .section_one {
     margin-top: 0rem;
     padding-top: 5rem;
-    padding-right: 0.125rem;
+    padding-right: 2rem;
     padding-bottom: 57rem;
-    padding-left: 0.125rem;
+    padding-left: 2rem;
     align-items: center;
     justify-content: flex-start;
     gap: 8rem;
